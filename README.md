@@ -1,6 +1,7 @@
 # Life_Expectancy_Prediction
 
  Computational Machine Learning
+ 
 **INTRODUCTION**
 
 This report present the use of multiple regression model to predict the life expectancy of a newborn based on several features related to the region which he/she was born, in other words making an ultimate judgement of how to approximate the unknown target function. In terms of principle of Ockham’s Razor the best approach is to find the simplest
