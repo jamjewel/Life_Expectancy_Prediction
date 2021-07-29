@@ -37,16 +37,16 @@ Coefficient of Determination  0.7675548028524057
 In regularisation we automatically find which hypothesis space best suits our problem. How we do it is, we come up with a way to let some of the un import things go to zero , it’s the perfect answer to over fitting. Feature selection happens implicitly.
 Regularisation of loss function has two parts, the smoothness part pushes towards simpler model and the data part combined with high degree of freedom pushes towards over fitting, this integration is balanced with the parameter lambda 𝜆 . If lambda 𝜆 value is
 too large it will ignore the data part and will end up giving a straight line parallel to x axis. In hypothesis what we can control is the 𝜃 which is the alpha value.
+
 **Polynomial Regression**
 The hypothesis space in polynomial regression takes both linear and non linear data. On increasing the degree the feature space becomes so large that we cannot run algorithms on it anymore. Put polynomial features in code then run linear fit function.
 With this many features given a polynomial function with degree 3 will have too many coefficients.
-Polynomial regression of degree 2
+**Polynomial regression of degree 2**
 Using K Fold cross validation - Evaluate then repeat, with different partitions as test set. Choose a model which gives an error which is similar to the average error.
 We use the following regularisation weights to evaluate which weight is best for the polynomial regression model. Here the best fit line is a curve unlike the straight line in linear regression. We predict the values for predY using the model we have already trained on trainX. In ridge regression when lama value is set to 0, then the equation becomes like a normal linear regression.
 
-
  In order to run a loop to find the optimised lambda value, lRegPara value was set to produce 20 values between 0.001 and 0.5 . This array was fed in and k fold iteration of data produced 10 individual unique set of training and testing data and the polynomial regression model with a adjusted values from loop runs over each unique data set of train and test data. We get the training and validation data in an array form and set the variables. The train data is fit in and validation dataset is fed into other variable , we run the algorithm and calculate the mean square error which shows to be 16.846955 and is quite less that the linear regression thus showing the curved line to be a better fit to minimise the loss function and cover larger ground with the hypothesis.
-Weight of a model with lasso.
+**Weight of a model with lasso.**
 As shown in figure 3 the lasso tool helps us to find the highest weighted feature. It can perform both variable selection and regularisation. Providing optimum feature selection will make the model much easier to interpret and reduces the effect of overfitting. In this case where three re 22 dimension the knowledge about right feature is important. As shown income composition of resource has the highest precedence, status and schooling also seem to effect the target life expectancy .
 **Polynomial regression of degree 3**
 We try to increase the degree of polynomial to 3 to check for a better fitting model but the number of coefficients are too large and the Figure shows the end result of it. The hypothesis space is so complex that Machine learning algorithms cannot perform on it. The alpha value provides a straight dip and thus causing a unambiguous choice of lambda variable. Here we can see a high variance thus it will failed for the test data under consideration ,
